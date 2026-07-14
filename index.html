@@ -1,1 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>NALGONDA DISTRICT - KONDAMALLEPALLY MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>NALGONDA DISTRICT</h1>
+<h2>KONDAMALLEPALLY MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!-- 1 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🔬</div>
+
+<div class="info">
+<h3>KMP-Research Institute</h3>
+<p>Research Institute</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71697,78.99837"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 2 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏨</div>
+
+<div class="info">
+<h3>KMP-Reddy Hotel</h3>
+<p>Hotel</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71409,79.00061"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 3 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🥬</div>
+
+<div class="info">
+<h3>KMP-Yadagiri Vegetable</h3>
+<p>Vegetable Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.7141,79.00372"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 4 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🌾</div>
+
+<div class="info">
+<h3>KMP-Ramavathi Weekend Forming</h3>
+<p>Farm</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71784,79.00239"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 5 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🎓</div>
+
+<div class="info">
+<h3>KMP-Jalsingh J College</h3>
+<p>College</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71938,78.99085"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 6 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+
+<div class="info">
+<h3>KMP-Rangeela Family Dhaba</h3>
+<p>Restaurant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71339,78.98666"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 7 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏨</div>
+
+<div class="info">
+<h3>KMP-Swagath Residency</h3>
+<p>Hotel</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71269,78.98158"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 8 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍷</div>
+
+<div class="info">
+<h3>KMP-Balaji Wines</h3>
+<p>Wine Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71102,78.978"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 9 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏭</div>
+
+<div class="info">
+<h3>KMP-Shiva Ganesh Industries</h3>
+<p>Industry</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71448,79.01467"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 10 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+
+<div class="info">
+<h3>KMP-Kanakadurga Restaurant</h3>
+<p>Restaurant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71328,79.01239"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 11 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+
+<div class="info">
+<h3>KMP-CAPally Grampanchaythi</h3>
+<p>Gram Panchayat Office</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.7153,79.00128"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 12 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍗</div>
+
+<div class="info">
+<h3>KMP-Murali Chicken Center</h3>
+<p>Chicken Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.7178,78.99972"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 13 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+
+<div class="info">
+<h3>KMP-Venkateshwara Temple</h3>
+<p>Temple</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.72816,78.99373"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 14 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛒</div>
+
+<div class="info">
+<h3>KMP-Ajay Kiranam</h3>
+<p>Kirana Store</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71442,79.00488"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 15 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍦</div>
+
+<div class="info">
+<h3>KMP-Himalaya Ice Cream</h3>
+<p>Ice Cream Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71439,78.9971"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 16 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚗</div>
+
+<div class="info">
+<h3>KMP-Vinayaka Motors</h3>
+<p>Automobile Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71729,78.9882"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 17 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+
+<div class="info">
+<h3>KMP-Rainbow School</h3>
+<p>School</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71541,78.98302"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 18 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">⛽</div>
+
+<div class="info">
+<h3>KMP-Megha Gas Station</h3>
+<p>Petrol Pump</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71346,78.98843"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 19 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">⛽</div>
+
+<div class="info">
+<h3>KMP-Petrol Pump</h3>
+<p>Petrol Pump</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71442,78.99468"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 20 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏨</div>
+
+<div class="info">
+<h3>KMP-Mamatha Hotel</h3>
+<p>Hotel</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71471,78.99376"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 21 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+
+<div class="info">
+<h3>KMP-Haritha Restaurant</h3>
+<p>Restaurant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=16.71411,78.99213"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Nalgonda District - Kondamallepally Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+
+function searchPlaces() {
+
+let input = document.getElementById("search").value.toLowerCase();
+
+let places = document.getElementsByClassName("place");
+
+for (let i = 0; i < places.length; i++) {
+
+let text = places[i].innerText.toLowerCase();
+
+if (text.indexOf(input) > -1) {
+places[i].style.display = "flex";
+} else {
+places[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
